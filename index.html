@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title -->
+    <title>MatchLens</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <h1>MatchLens</h1>
+            <nav>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#">Github</a>
+                <a href="#">Twitter/X</a>
+            </nav>
+            <i id="hamburger" class="ri-menu-line"></i>
+        </div>
+
+        <div class="hero">
+            <h2>Your Resume, Decoded by AI.</h2>
+            <p>Upload and see your skills, strength areas, and career fit — all from a single click. It’s like career magic, minus the wand.</p>
+            <div class="input-section">
+                <textarea name="" id="job-description" placeholder="Paste your job description here"></textarea>
+                <input type="file" id="file-upload" accept=".pdf,.doc,.docx" style="display: none;">
+                <div class="upload-file">
+                    <h4>Upload Your Resume Here...</h4>
+                    <button id="upload-btn">Upload File</button>
+                </div>
+            </div>
+            <button id="analyze-btn">Analyze Resume &nbsp;<i class="ri-bard-line"></i></button>
+        </div>
+
+        <div class="how-it-works" id="how-it-works">
+            <h3>How it Works</h3>
+            <p>Let our AI guide you through a simple 3-step process to evaluate your resume against any job description.</p>
+            <div class="steps">
+                <div class="step">
+                    <h4><i class="ri-clipboard-line"></i> &nbsp; Paste the Job Description</h4>
+                    <p>Copy and paste the job description of the role you’re applying for. This helps our AI understand exactly what the employer is looking for in a candidate.</p>
+                </div>
+                <div class="step">
+                    <h4><i class="ri-upload-cloud-line"></i> &nbsp; Upload Your Resume (PDF)</h4>
+                    <p>Upload your resume in PDF format. Our system will scan and extract key details to compare with the job description.</p>
+                </div>
+                <div class="step">
+                    <h4><i class="ri-gemini-fill"></i> &nbsp; Click 'Evaluate' to Get Results</h4>
+                    <p>Once everything’s ready, click the 'Evaluate' button. You’ll instantly get a detailed analysis of how well your resume matches the job.</p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
