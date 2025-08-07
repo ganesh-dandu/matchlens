@@ -68,6 +68,7 @@ nav a{
 
 .hero{
     margin-top: 3rem;
+    margin-bottom: 6rem;
 }
 
 .hero h2{
@@ -152,10 +153,10 @@ nav a{
 }
 
 .how-it-works{
-    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 .how-it-works h3{
@@ -208,17 +209,18 @@ nav a{
 
 .footer{
     width: 100%;
-    margin-top: 6rem;
     display: flex;
     justify-content: space-between;
     text-align: left;
     align-items: center;
     padding: 1.5rem 0;
+    flex-wrap: wrap;
 }
 
 .footer .left{
     margin: 0;
     padding: 0;
+    order: 1;
 }
 
 .footer .left h2{
@@ -234,6 +236,13 @@ nav a{
     color: var(--text-secondary);
     margin-top: 0.5rem;
     margin-bottom: 0px;
+}
+
+.footer .right{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    order: 2;
 }
 
 .footer .right .container{
@@ -274,4 +283,21 @@ nav a{
   .steps {
     flex-direction: column;
   }
+
+  .footer{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .footer .left{
+    order: 2;
+  }
+
+    .footer .right{
+        order: 1;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
 }
